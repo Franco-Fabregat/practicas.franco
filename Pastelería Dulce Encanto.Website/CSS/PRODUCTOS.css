@@ -1,0 +1,131 @@
+#Productos {
+  background-color: #eee9e9;
+  height: fit-content;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.tituloss {
+  color: #67330d;
+  text-transform: capitalize;
+  text-align: center;
+  display: block;
+}
+.producto {
+  padding-bottom: 20px;
+  margin: 0 20px 0 20px;
+}
+
+/* Productos */
+.nuestros-productos {
+  display: inline-block;
+  margin: 20px 0 50px 40px;
+  padding-bottom: 25px;
+  height: fit-content;
+  width: 350px;
+  align-content: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 3px 5px 1px #00000036;
+}
+
+.tarta {
+  height: 350px;
+  width: 350px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 3px 5px 1px #00000036;
+  margin: 0;
+}
+.tarta:hover {
+  height: 380px;
+  width: 380px;
+}
+
+.fondo {
+  background-color: rgb(192, 175, 149);
+}
+
+/* Precios */
+.precio {
+  height: fit-content;
+  color: white;
+  display: block;
+  padding: 3px;
+  background-color: #805d45;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Nombre y Descripción de los Productos */
+
+.nombre-de-producto {
+  font-size: normal;
+  color: #67330d;
+  display: block;
+  padding: 24px 0 0 0;
+  text-align: center;
+}
+/* descripocion de los productos */
+
+.descripcion-de-productos {
+  width: fit-content;
+  font-size: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  color: #c7a690;
+  font-weight: light;
+}
+
+/* Botones */
+.solicitar-informacion {
+  margin: 0;
+  float: none;
+  background-color: rgb(182, 132, 173);
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  position: relative;
+  left: 13px;
+}
+.informacion {
+  font-size: 20px;
+  color: white;
+  font-weight: normal;
+}
+
+/* Recuadro */
+.recuadro {
+  height: fit-content;
+  margin-left: 115px;
+  margin-right: 90px;
+  background-color: #dac8c8;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  left: 5px;
+}
+
+.encabezado-recuadro {
+  display: inline-block;
+  padding-top: 80px;
+  color: #67330d;
+  width: fit-content;
+  height: fit-content;
+}
+
+.texto-recuadro {
+  width: fit-content;
+  font-size: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  color: #a38a79;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.boton-recuadro {
+  background-color: #bb8763;
+}

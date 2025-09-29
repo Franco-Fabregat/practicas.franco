@@ -1,0 +1,59 @@
+#Inicio {
+  background-image: url(./../IMAGENES/background-menu.jpg);
+  background-size: cover;
+  height: fit-content;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position-y: -110px;
+}
+
+h1 {
+  display: block;
+  font-size: 70px;
+  color: white;
+  margin-top: 0;
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+.pastelería {
+  color: pink;
+  padding: 0;
+  margin: 30px auto;
+}
+p {
+  display: inline-block;
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  width: fit-content;
+  color: rgb(133, 58, 139);
+  font-weight: bolder;
+  font-style: italic;
+  margin: 40px 100px;
+  text-align: center;
+}
+
+/* Botones */
+.Inicio-botones {
+  text-align: center;
+  height: fit-content;
+  margin-left: 80px;
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+.botones:hover {
+  cursor: pointer;
+}
+
+.botones {
+  margin: 0 40px;
+  float: none;
+  background-color: rgb(199, 140, 189);
+  padding: 20px 10px;
+}
+
+.a {
+  font-size: 23px;
+  color: white;
+  font-weight: bolder;
+  padding: 20px 10px;
+}

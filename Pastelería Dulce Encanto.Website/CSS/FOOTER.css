@@ -1,0 +1,82 @@
+footer {
+  height: fit-content;
+  background-color: rgb(95, 35, 35);
+  padding-bottom: 30px;
+  text-align: center;
+}
+.dl-footer {
+  color: white;
+  float: right;
+  margin: 60px 50px 0 50px;
+  float: right;
+  text-align: left;
+}
+
+.dt-footer {
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: normal;
+}
+.dd-footer {
+  margin-top: 10px;
+}
+
+.link-footer {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.div-footer {
+  width: 400px;
+  margin: 80px 50px 0 50px;
+  display: inline-block;
+}
+
+.text-footer {
+  font-size: 18px;
+  font-weight: normal;
+  width: 400px;
+  color: white;
+  margin: 0 0 10px 0;
+  display: block;
+}
+
+.img-div-footer {
+  background-color: rgb(129, 79, 79);
+  height: 45px;
+  width: 45px;
+  border-radius: 22.5px;
+  background-size: cover;
+  margin-right: 15px;
+}
+
+.linea {
+  height: 3px;
+  background-color: rgb(56, 55, 55);
+  margin: 20px 50px 20px 50px;
+}
+
+/* Politica, Condiciones y Derechos*/
+.politica-y-condiciones {
+  float: right;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+.politica-y-condiciones:hover {
+  color: rgb(151, 144, 144);
+}
+
+.derechos {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+.derechos:hover {
+  color: rgb(151, 144, 144);
+}

@@ -1,0 +1,37 @@
+body{margin: 20px; background-color:bisque;}
+/*Div1*/
+  .portada{width: 100%;
+    height: 600px;
+    border-radius: 40px;
+    display: block;
+    margin: 10px;}
+
+  .div1 {background: rgba(10, 100, 202, 0.788);border:double 10px white; border-radius:40px ;} 
+#name {color: white; text-align: center;font-family: "Edu NSW ACT Cursive"; font-weight: 600;font-size: xxx-large;}
+ .div1 p{color: black ;padding-left: 10px; padding-bottom: 20px;
+    padding-top: 20px; font-size: 20px; font-family: "Edu NSW ACT Cursive"; font-weight: 500
+  }
+
+h2 {color: yellow; padding-left: 120px; font-family: "Nunito", sans-serif; font-weight: 600}
+
+
+/*Menú*/
+.menu {background: rgb(224, 67, 50); color: white; border: solid 5px yellow; border-radius: 60px ; padding-left: 50px; padding-bottom: 20px;
+    padding-top: 20px}
+.menu h3 {color: yellow; font-family: "Edu NSW ACT Cursive"; font-weight: 600; font-size: x-large}
+.menu ul {font-family: "Nunito", sans-serif}
+.comida {height:380px; width:400px;
+   border-radius: 40px;
+    margin: 10px;}
+
+/*Horarios*/
+.horarios {background: rgb(255, 253, 253) ;color:blue ; border: solid 5px rgb(236, 10, 10, 0.849); border-radius: 60px ;padding-left: 50px; padding-bottom: 20px;
+    padding-top: 20px; font-family: "Edu NSW ACT Cursive"; font-weight: 500; font-size: large;
+   }
+
+p {color:black; margin: 10px; font-family: Arial, Helvetica, sans-serif;font-size: smaller;}
+/*Contacto*/
+.contacto {background:blue; color:white; height: 40px; padding-left: 20px ; padding-right: 20px;}
+.contacto:hover{background-color: rgb(224, 67, 50);color: black; cursor: pointer;}
+a {text-decoration: none;}
+ a:hover { color:rgb(231, 24, 24) ; }
