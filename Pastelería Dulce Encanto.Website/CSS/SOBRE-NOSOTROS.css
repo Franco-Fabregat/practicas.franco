@@ -96,8 +96,8 @@ span {
 }
 
 .equipo-trabajo {
-height: auto
-  width: 50%;
+height: 300px
+  width: auto;
   border-radius: 40px;
 }
 
@@ -105,6 +105,7 @@ height: auto
   margin: 15px;
   color: #67330d;
 }
+
 
 
 
