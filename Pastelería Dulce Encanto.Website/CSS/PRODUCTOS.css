@@ -1,0 +1,150 @@
+#Productos {
+  background-color: #eee9e9;
+  text-align: center;
+  padding-bottom: 70px;
+  height: fit-content;
+}
+
+.tituloss {
+  color: #67330d;
+  text-transform: capitalize;
+  text-align: center;
+  display: block;
+  font-size: 60px;
+}
+
+.producto {
+  padding-bottom: 20px;
+  margin: 0 20px;
+}
+
+/* Contenedor principal de productos */
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centra los productos horizontalmente */
+  gap: 30px;
+  margin: 0 auto;
+}
+
+/* Cada producto */
+.nuestros-productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra imagen, título, descripción y botón */
+  margin: 20px 0;
+  padding-bottom: 25px;
+  height: fit-content;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 3px 5px 1px #00000036;
+}
+
+.tarta {
+  height: 350px;
+  width: 350px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 3px 5px 1px #00000036;
+  margin: 0;
+}
+
+.tarta:hover {
+  height: 380px;
+  width: 380px;
+}
+
+.fondo {
+  background-color: rgb(192, 175, 149);
+}
+
+/* Precios */
+.precio {
+  color: white;
+  background-color: #805d45;
+  font-size: 20px;
+  text-align: center;
+  padding: 3px 0;
+  margin: 0 0 10px 0;
+}
+
+/* Nombre y Descripción de los Productos */
+.nombre-de-producto {
+  font-size: normal;
+  color: #67330d;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.descripcion-de-productos {
+  font-size: 20px;
+  margin: 0;
+  color: #c7a690;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/* Botones */
+.solicitar-informacion {
+  background-color: rgb(182, 132, 173);
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  /* float eliminado */
+}
+
+.informacion {
+  font-size: 20px;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* Recuadro */
+.recuadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  margin: 40px auto;
+  background-color: #dac8c8;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.encabezado-recuadro {
+  color: #67330d;
+  padding-top: 80px;
+  font-size: 30px;
+  /* display inline-block eliminado */
+}
+
+.texto-recuadro {
+  font-size: 20px;
+  margin: 20px auto;
+  color: #a38a79;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.boton-recuadro {
+  background-color: #bb8763;
+}
+
+/* ==== Comentado / Eliminado ==== */
+/*
+.nuestros-productos {
+  display: inline-block;
+  margin-left: 40px;
+  align-content: center;
+}
+.descripcion-de-productos {
+  width: fit-content;
+}
+.encabezado-recuadro {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+}
+*/

@@ -1,0 +1,81 @@
+footer {
+  background-color: rgb(95, 35, 35);
+  padding: 40px 50px;
+  text-align: center;
+  color: white;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.dl-footer {
+  width: 300px;
+  margin-top: 40px;
+}
+.div-footer {
+  width: 400px;
+}
+
+.dl-footer {
+  text-align: left;
+}
+
+.dt-footer {
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: normal;
+}
+
+.dd-footer {
+  margin-top: 10px;
+}
+
+.link-footer {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.text-footer {
+  font-size: 18px;
+  font-weight: normal;
+  width: 400px;
+  color: white;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.img-div-footer {
+  background-color: rgb(129, 79, 79);
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-right: 15px;
+}
+
+.linea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.politica-y-condiciones,
+.derechos {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  margin: 0 20px 0 20px;
+}
+
+.politica-y-condiciones:hover,
+.derechos:hover {
+  color: rgb(151, 144, 144);
+}

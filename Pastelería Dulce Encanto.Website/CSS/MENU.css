@@ -1,0 +1,87 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+/* Logo  */
+.menu img {
+  height: 60px;
+  margin: 0;
+}
+
+/* Título  */
+.menu h2 {
+  font-size: 35px;
+  color: rgb(199, 140, 189);
+  margin: 0;
+  padding-left: 10px;
+}
+
+/* Lista de navegación  */
+.menu ul {
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Botón  */
+.menu button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: rgb(199, 140, 189);
+  border: none;
+  cursor: pointer;
+}
+
+.menu .button {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ==== Eliminado / Comentado ==== */
+/*
+h2 {
+  display: inline-block;   <-- ya no hace falta
+  position: relative;
+  bottom: 24px;
+}
+ul {
+  display: inline-block;
+  position: relative;
+  bottom: 25px;
+  width: fit-content;
+}
+button {
+  float: right; <-- eliminado
+  position: relative;
+  right: 10px;
+  top: 10px;
+  width: fit-content;
+}
+*/

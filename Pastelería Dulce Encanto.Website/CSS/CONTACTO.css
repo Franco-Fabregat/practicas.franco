@@ -1,0 +1,150 @@
+#Contacto {
+  background-color: #dac8c8;
+  padding: 40px;
+  text-align: center;
+  height: fit-content;
+  padding-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.contacto {
+  margin: 0 20px 40px 20px;
+}
+
+/* Contenedor general de formulario + info contacto */
+.contacto-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Información de contacto */
+.informacion-contacto {
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  width: 500px;
+  height: fit-content;
+  padding: 20px;
+}
+
+.encabezado {
+  color: #67330d;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+dl {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+dd {
+  font-size: 18px;
+  margin: 0;
+}
+
+dt {
+  font-weight: bolder;
+  color: #694830;
+  font-size: 20px;
+}
+
+/* Formulario */
+#solicita-tu-pastel {
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  width: 600px;
+  padding: 20px;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.encabezado-formulario {
+  color: #67330d;
+  font-size: 30px;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: center;
+}
+
+.texto-formulario {
+  font-size: 18px;
+  font-weight: normal;
+  color: #a38a79;
+  margin: 5px auto 20px;
+  text-align: center;
+}
+
+/* FORMULARIO */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+label {
+  color: #67330d;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 5px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #572610;
+  outline: none;
+}
+
+.textarea-ancho,
+textarea {
+  width: 410px;
+}
+
+.form-buttom {
+  background-color: #bb8763;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* Tag de despedida */
+.tag-de-despedida {
+  background-color: #d8a7a7;
+  text-align: center;
+  border-radius: 20px;
+  width: 600px;
+  margin-top: 30px;
+  height: 150px;
+  line-height: 150px;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}

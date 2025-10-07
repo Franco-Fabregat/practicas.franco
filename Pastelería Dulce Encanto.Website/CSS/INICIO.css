@@ -1,0 +1,75 @@
+#Inicio {
+  background-image: url(./../IMAGENES/background-menu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: fit-content; /* se mantiene */
+  padding-top: 100px; /* para separar del header */
+}
+
+#Inicio h1 {
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  margin: 0 0 20px 0;
+}
+
+#Inicio h1 + .artesanal {
+  color: rgb(209, 97, 200);
+  margin: auto;
+  padding: 0;
+}
+
+/* Párrafos */
+#Inicio p {
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  color: rgb(134, 30, 141);
+  font-weight: bolder;
+  font-style: italic;
+  margin: 40px 100px;
+  text-align: center;
+  /* display: inline-block; eliminado */
+  /* width: fit-content; eliminado, Flex se encargará */
+}
+
+/* ==== Botones ==== */
+.Inicio-botones {
+  display: flex;
+  justify-content: center; /* centra los botones horizontalmente */
+  gap: 40px; /* espacio entre botones */
+  flex-wrap: wrap; /* se acomoda en móviles */
+  margin-top: 60px;
+  margin-left: 0; /* se elimina el margen lateral innecesario */
+  padding-bottom: 40px;
+}
+
+.botones {
+  background-color: rgb(199, 140, 189);
+  padding: 20px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botones:hover {
+  opacity: 0.9;
+}
+
+.a {
+  font-size: 23px;
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 20px 10px;
+}
+
+/* ==== Comentado / Eliminado ==== */
+/*
+p {
+  display: inline-block;
+  width: fit-content;
+}
+.botones {
+  float: none; <-- ya no hace falta
+}
+*/
