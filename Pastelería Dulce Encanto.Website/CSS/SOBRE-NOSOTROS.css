@@ -99,14 +99,15 @@ span {
 
 .equipo-trabajo {
   width: 100%; /* ocupa todo el ancho del contenedor */
-  max-width: 600px; /* no crece demasiado */
-  height: auto; /* altura proporcional */
+  max-width: 400px; /* no crece demasiado */
+  height: 400px; /* altura proporcional */
   border-radius: 40px;
 
 .equipo-trabajo-descripcion {
   margin: 15px;
   color: #67330d;
 }
+
 
 
 
