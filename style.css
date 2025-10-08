@@ -24,7 +24,7 @@ p {
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#Inicio p { padding-bottom:40px
+#Inicio p { padding-bottom:40px;
   flex-shrink: 1;
   font-size: larger;
   margin: 0 10% 0 10%;
