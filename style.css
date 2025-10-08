@@ -24,11 +24,13 @@ p {
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#Inicio p { padding-bottom:40px;
+#Inicio p {
   flex-shrink: 1;
   font-size: larger;
   margin: 0 10% 0 10%;
+   padding-bottom:40px;
 }
+
 #Inicio h2 {
   font-size: 30px;
   color: rgb(81, 224, 205);
