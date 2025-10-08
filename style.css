@@ -16,7 +16,7 @@ h1,
 h2,
 p {
   flex-grow: 1;
-  color: white; padding-bottom:40px
+  color: white;
 }
 
 #Inicio > h1 {
@@ -24,8 +24,8 @@ p {
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#Inicio p {
-  flex-shrink: 2;
+#Inicio p { padding-bottom:40px
+  flex-shrink: 1;
   font-size: larger;
   margin: 0 10% 0 10%;
 }
