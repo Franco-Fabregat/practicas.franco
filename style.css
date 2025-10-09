@@ -2,7 +2,7 @@
 header {
   flex: 1;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 0 0 0;
   background: linear-gradient(135deg, #21213f 60%, #817f7f);
   color: #ffffff;
 }
@@ -12,16 +12,22 @@ header h1 {
 }
 header h2 {
   font-size: 1.5rem;
-  margin: 0.5rem 0;
+  margin: 1rem 0 2rem 0;
+  padding-bottom: 5rem;
 }
 header p {
   font-size: 1rem;
   line-height: 1.6;
 }
+.hero {
+  flex: 1;
+  text-align: center;
+  padding: 2rem 2rem 0 2rem;
+}
 
 #about-me {
   background-color: transparent;
-  padding: 2rem;
+  padding: 1rem;
   margin: 2rem 0;
   display: flex;
   justify-content: space-around;
@@ -29,8 +35,8 @@ header p {
   border: black solid 4px;
   border-radius: 40px;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #about-me > h2 {
@@ -42,20 +48,22 @@ header p {
 
 /* Navegación */
 nav {
-  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
   background-color: #1e1e1e;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 nav ul {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  list-style: none;
+  justify-content: space-around;
   padding: 0;
   margin: 0;
 }
 nav ul li {
-  margin: 3px 3.5rem;
+  margin: 5px 4rem;
 }
 nav ul li a {
   text-decoration: none;
@@ -102,6 +110,9 @@ main h1 {
   line-height: 1.5;
 }
 .proyectos a {
+  border: white 2px solid;
+  padding: 5px;
+  border-radius: 4px;
   display: inline-block;
   margin-top: 1rem;
   color: #03dac6;
@@ -132,11 +143,5 @@ footer a img {
 }
 footer a img:hover {
   transform: scale(1.1);
-}
-
-footer > article > h2 + p + a > img {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
 }
 
