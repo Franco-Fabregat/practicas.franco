@@ -3,18 +3,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  height: fit-content; /* se mantiene */
-  padding-top: 100px; /* para separar del header */
+  min-height: 100vh; /* se mantiene */
+}
+
+.opacidad {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: inherit;
 }
 
 #Inicio h1 {
+   padding-top: 100px; /* para separar del header */
   font-size: 70px;
   color: rgb(255, 255, 255);
   margin: 0 0 20px 0;
 }
 
+
 #Inicio h1 + .artesanal {
-  color: rgb(209, 97, 200);
+  color: rgb(243, 74, 229);
   margin: auto;
   padding: 0;
 }
@@ -23,7 +29,7 @@
 #Inicio p {
   font-family: Helvetica, sans-serif;
   font-size: 40px;
-  color: rgb(134, 30, 141);
+  color: rgb(235, 72, 247);
   font-weight: bolder;
   font-style: italic;
   margin: 40px 100px;
@@ -73,3 +79,4 @@ p {
   float: none; <-- ya no hace falta
 }
 */
+
