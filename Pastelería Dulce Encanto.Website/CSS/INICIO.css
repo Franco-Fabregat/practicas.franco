@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  min-height: 100vh; /* se mantiene */
+  min-height: 100vh; 
 }
 
 .opacidad {
@@ -79,4 +79,5 @@ p {
   float: none; <-- ya no hace falta
 }
 */
+
 
