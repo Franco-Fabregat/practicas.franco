@@ -1,0 +1,65 @@
+nav.navbar {
+  background: linear-gradient(135deg, #f8f8f8, #002163 60%);
+}
+
+li > a[href="#"] {
+  font-size: 1.3rem;
+}
+
+li > a[href^="#"] {
+  position: relative;
+}
+li > a[href^="#"]::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+li > a[href^="#"]:hover::after {
+  transform: scaleX(1);
+}
+
+li > a[href^="#"]:hover {
+  font-weight: bolder;
+}
+
+/* Cards */
+.card-body a[class*="disabled"] {
+  pointer-events: fill;
+  cursor: not-allowed;
+}
+
+.card:hover {
+  box-shadow: -10px 5px 5px blue;
+  transform: translateY(-5px) translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Footer */
+h3 + article > div > a[target="_blank"] {
+  position: relative;
+  font-size: 1.3rem;
+}
+h3 + article > div > a[target="_blank"]::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+h3 + article > div > a[target="_blank"]:hover::after {
+  transform: scaleX(1);
+}

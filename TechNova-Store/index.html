@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechNova.Store</title>
+    <link rel="stylesheet" href="CSS-artesanal/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #010024de;
+      }
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      header {
+        background-image: url("imágenes/hero-image.jpg");
+      }
+      header {
+        height: 580px;
+        max-width: 100%;
+      }
+      header {
+        background-position: center;
+      }
+      header {
+        background-repeat: no-repeat;
+      }
+
+      header > div {
+        height: inherit;
+        width: inherit;
+        background-color: rgba(1, 13, 54, 0.363);
+      }
+    </style>
+  </head>
+
+  <body class="d-flex flex-column flex-wrap">
+    <!-- Navbar Section -->
+    <nav class="navbar align-items-center container-fluid p-0 sticky-top">
+      <div class="container-md flex-wrap justify-content-between">
+        <!-- Logo -->
+        <section class="row align-items-center col-12 col-lg-3">
+          <div>
+            <img
+              class="navbar-brand"
+              src="imágenes/logo.technova.png"
+              alt="Logo"
+              width="50"
+              height="70"
+            />
+            <strong> <span class="h3">TechNova</span></strong>
+          </div>
+        </section>
+        <!-- Barra de navegación -->
+        <div class="flex-wrap col-12 col-lg-5">
+          <ul
+            class="navbar-nav d-flex flex-row text-center p-0 gap-4 align-items-center overflow-auto"
+          >
+            <li class="nav-item ms-2">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#Inicio"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Reseñas">Reseñas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">🛒</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================================== -->
+
+    <!-- Hero Section -->
+    <header id="Inicio" class="container-xxl p-0">
+      <div class="align-content-center border-bottom border-primary border-3">
+        <section class="text-center z-3">
+          <h1 class="display-2 text-primary pt-5">
+            <strong>Tecnología al Alcance de Todos</strong>
+          </h1>
+          <p class="fs-2 text-white p-3">
+            Descubre los mejores productos tech del mercado.
+          </p>
+
+          <a class="btn btn-primary mb-4" href="#Productos" role="button"
+            >Ver Productos</a
+          >
+        </section>
+      </div>
+    </header>
+
+    <!-- =========================================== -->
+
+    <!-- Main Section -->
+    <main class="container-md">
+      <h2 id="Productos" class="my-5 fs-1 text-center text-primary">
+        <strong>Nuestros Productos</strong>
+      </h2>
+
+      <!-- =========================================== -->
+
+      <!-- Cards -> Productos -->
+      <section
+        class="row gy-4 justify-content-center border-bottom border-primary border-3 py-5"
+      >
+        <!-- Card 1 -->
+        <article
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+        >
+          <div class="card text-bg-info opacity-50" style="width: 18rem">
+            <div class="position-relative">
+              <img
+                src="imágenes/Headphone-X-Force.webp"
+                class="card-img-top mt-3"
+                alt="Headphone X Force"
+              />
+              <p
+                class="position-absolute top-0 start-50 translate-middle-x badge rounded-pill bg-danger py-2 px-3"
+              >
+                AGOTADO
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Headphone X Force</h5>
+              <p class="card-text">
+                Auriculares gaming con sonido envolvente 7.1 y micrófono
+                profesional
+              </p>
+              <p class="fs-2 text-primary">$1000 UYU</p>
+              <a href="#" class="btn btn-primary disabled">Ver Producto</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+        >
+          <div class="card text-bg-info" style="width: 18rem">
+            <img
+              src="imágenes/Laptop-ultraBook.webp"
+              class="card-img-top mt-3"
+              alt="Laptop UltraBook"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Laptop UltraBook</h5>
+              <p class="card-text">
+                Laptop ultradelgada con procesador Intel i7 de 12va generación
+              </p>
+              <p class="fs-2 text-primary">$30.000 UYU</p>
+              <a href="#" class="btn btn-primary">Ver Producto</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+        >
+          <div class="card text-bg-info" style="width: 18rem">
+            <img
+              src="imágenes/mouse-rgb-pro.png"
+              class="card-img-top mt-3"
+              alt="Mouse RGB Pro"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mouse RGB Pro</h5>
+              <p class="card-text">
+                Mouse gaming de alta precisión con iluminación RGB
+                personalizable
+              </p>
+              <p class="fs-2 text-primary">$800 UYU</p>
+              <a href="#" class="btn btn-primary">Ver Producto</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+        >
+          <div class="card text-bg-info opacity-50" style="width: 18rem">
+            <div class="position-relative">
+              <img
+                src="imágenes/Teclado-mecánico-copia.jpg"
+                class="card-img-top mt-3"
+                alt="Teclado Mecánico"
+              />
+              <p
+                class="position-absolute top-0 start-50 translate-middle-x badge rounded-pill bg-danger py-2 px-3"
+              >
+                AGOTADO
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Teclado Mecánico</h5>
+              <p class="card-text">
+                Teclado mecánico con switches Cherry MX y retroiluminación RGB
+              </p>
+              <p class="fs-2 text-primary">$2000 UYU</p>
+              <a href="#" class="btn btn-primary disabled">Ver Producto</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+        >
+          <div class="card text-bg-info" style="width: 18rem">
+            <img
+              src="imágenes/Airpods-pro.jpg"
+              class="card-img-top mt-3"
+              alt="Airpods Pro"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Airpods Pro</h5>
+              <p class="card-text">
+                Airpods Pro de alta calidad, inalámbricos con cancelación de
+                ruido activa
+              </p>
+              <p class="fs-2 text-primary">$700 UYU</p>
+              <a href="#" class="btn btn-primary">Ver Producto</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+        >
+          <div class="card text-bg-info" style="width: 18rem">
+            <img
+              src="imágenes/Smartphone-Pro.jpg"
+              class="card-img-top mt-3"
+              alt="Smartphone Pro"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Smartphone Pro</h5>
+              <p class="card-text">
+                Smartphone de última generación con cámara de 108MP y 5G
+              </p>
+              <p class="fs-2 text-primary">$20.000 UYU</p>
+              <a href="#" class="btn btn-primary">Ver Producto</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+        >
+          <div class="card text-bg-info opacity-50" style="width: 18rem">
+            <div class="position-relative">
+              <img
+                src="imágenes/Setup-Gamer-Completo.jpg"
+                class="card-img-top mt-3"
+                alt="Setup Gamer Completo"
+              />
+              <p
+                class="position-absolute top-0 start-50 translate-middle-x badge rounded-pill bg-danger py-2 px-3"
+              >
+                AGOTADO
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Setup Gamer Completo</h5>
+              <p class="card-text">
+                Setup gamer moderno con PC RGB de alto rendimiento,
+                refrigeración por ventiladores LED, monitor Full HD. Perfecto
+                equilibrio entre potencia, estilo y confort visual.
+              </p>
+              <p class="fs-2 text-primary">$60.000 UYU</p>
+              <a href="#" class="btn btn-primary disabled">Ver Producto</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article
+          class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+        >
+          <div class="card text-bg-info" style="width: 18rem">
+            <img
+              src="imágenes/smart-watch.webp"
+              class="card-img-top mt-3"
+              alt="Smart Watch"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Smart Watch</h5>
+              <p class="card-text">
+                Reloj inteligente con monitoreo de salud 24/7 y GPS integrado.
+              </p>
+              <p class="fs-2 text-primary">$1500 UYU</p>
+              <a href="#" class="btn btn-primary">Ver Producto</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- =========================================== -->
+
+      <!-- Reseñas Section -->
+      <section class="row justify-content-center gap-3 py-5">
+        <h2 id="Reseñas" class="my-4 fs-1 text-center text-primary">
+          <strong>Reseñas de Nuestros Clientes</strong>
+        </h2>
+
+        <!-- Reseña 1 -->
+        <article
+          class="col-12 col-sm-5 col-lg-5 col-xl-5 d-flex justify-content-center"
+        >
+          <div class="card py-4 bg-primary-subtle" style="width: 18rem">
+            <img
+              src="imágenes/avatares/avatar1.jpg"
+              alt=""
+              class="card-img-top rounded-circle"
+              style="width: 80px; height: 80px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Carlos Méndez</h5>
+              <h6 class="card-subtitle text-body-secondary">⭐⭐⭐⭐⭐</h6>
+              <p class="card-text">
+                "Excelente servicio y productos de calidad. El mouse gamer que
+                compré superó mis expectativas. ¡Totalmente recomendado!"
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reseña 2 -->
+        <article
+          class="col-12 col-sm-5 col-lg-5 col-xl-5 d-flex justify-content-center"
+        >
+          <div class="card py-4 bg-primary-subtle" style="width: 18rem">
+            <img
+              src="imágenes/avatares/avatar2.jpg"
+              alt=""
+              class="card-img-top rounded-circle"
+              style="width: 80px; height: 80px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Luis Ramírez</h5>
+              <h6 class="card-subtitle text-body-secondary">⭐⭐⭐⭐</h6>
+              <p class="card-text">
+                "Precios competitivos y gran variedad de productos. Mi setup
+                gaming está completo gracias a TechNova."
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reseña 3 -->
+        <article
+          class="col-12 col-sm-5 col-lg-5 col-xl-5 d-flex justify-content-center"
+        >
+          <div class="card py-4 bg-primary-subtle" style="width: 18rem">
+            <img
+              src="imágenes/avatares/avatar3.jpg"
+              alt=""
+              class="card-img-top rounded-circle"
+              style="width: 80px; height: 80px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ana López</h5>
+              <h6 class="card-subtitle text-body-secondary">⭐⭐⭐⭐</h6>
+              <p class="card-text">
+                "La laptop que adquirí es perfecta para mi trabajo. Rápida
+                entrega y atención al cliente excepcional."
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reseña 4 -->
+        <article
+          class="col-12 col-sm-5 col-lg-5 col-xl-5 d-flex justify-content-center"
+        >
+          <div class="card py-4 bg-primary-subtle" style="width: 18rem">
+            <img
+              src="imágenes/avatares/avatar4.jpg"
+              alt=""
+              class="card-img-top rounded-circle"
+              style="width: 80px; height: 80px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pedro García</h5>
+              <h6 class="card-subtitle text-body-secondary">⭐⭐⭐⭐</h6>
+              <p class="card-text">
+                "Los auriculares que compré tienen una calidad de sonido
+                increíble. Definitivamente volveré a comprar aquí."
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- =========================================== -->
+
+    <!-- Footer -->
+    <footer
+      class="container-fluid border-top border-primary border-2 py-5 position-relative"
+    >
+      <h3 class="text-center fs-2 text-secondary mb-3">TechNova.Store</h3>
+      <article class="container">
+        <div class="row row-cols-3 justify-content-center my-5">
+          <a
+            href="https://github.com/Franco-Fabregat/practicas.franco "
+            class="col text-center"
+            target="_blank"
+            title="Mi GitHub"
+            >🖥</a
+          >
+          <a
+            href="mailto:fabregatsierra15@gmail.com"
+            class="col text-center"
+            target="_blank"
+            title=" Mi Correo"
+            >📧</a
+          >
+          <a
+            href="https://wa.me/+59897785586"
+            class="col text-center"
+            target="_blank"
+            title="Mi Contacto"
+            >📱</a
+          >
+        </div>
+        <p
+          class="text-center text-secondary position-absolute bottom-0 start-50 translate-middle-x"
+          title="Hecho con HTML, CSS y Bootstrap"
+        >
+          Todos los derechos reservados
+        </p>
+      </article>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
