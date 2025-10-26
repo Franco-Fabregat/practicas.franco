@@ -3,7 +3,7 @@ header {
   flex: 1;
   text-align: center;
   padding: 3rem 0 0 0;
-  background: linear-gradient(135deg, #21213f 60%, #817f7f);
+  background: linear-gradient(135deg, #21213f 50%, #817f7f);
   color: #ffffff;
 }
 header h1 {
@@ -37,6 +37,13 @@ header p {
   justify-content: center;
   margin-left: 20%;
   margin-right: 20%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.397);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#about-me:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.397);
 }
 
 #about-me > h2 {
@@ -61,6 +68,7 @@ nav ul {
   justify-content: space-around;
   padding: 0;
   margin: 0;
+  flex-grow: 1;
 }
 nav ul li {
   margin: 5px 5px;
@@ -88,18 +96,21 @@ main h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   gap: 2rem;
 }
 .proyectos article {
+  width: 20rem;
   background-color: #1e1e1e;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.274);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .proyectos article:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: -10px 5px 5px blue;
+  transform: translateY(-5px) translateX(5px);
+  transition: all 0.3s ease;
 }
 .proyectos h2 {
   margin-top: 0;
@@ -144,4 +155,3 @@ footer a img {
 footer a img:hover {
   transform: scale(1.1);
 }
-
