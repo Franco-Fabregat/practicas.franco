@@ -51,10 +51,10 @@ const proyectos = {
       "Desarrollé un sitio web para una pastelería local llamada 'Dulce Encanto'. El sitio presenta un diseño atractivo y funcional, con secciones para mostrar productos, promociones y contacto. Utilicé HTML, CSS y JavaScript para crear una experiencia de usuario amigable y visualmente atractiva.",
     tecnologias: ["HTML", "CSS"],
     Imagen: [
-      "../visuales/capturas-de-proyectos/pasteleria/photo1.png",
-      "../visuales/capturas-de-proyectos/pasteleria/photo2.jpg",
-      "../visuales/capturas-de-proyectos/pasteleria/photo3.jpg",
-      "../visuales/capturas-de-proyectos/pasteleria/photo4.jpg",
+      "visuales/capturas-de-proyectos/pasteleria/photo1.png",
+      "visuales/capturas-de-proyectos/pasteleria/photo2.jpg",
+      "visuales/capturas-de-proyectos/pasteleria/photo3.jpg",
+      "visuales/capturas-de-proyectos/pasteleria/photo4.jpg",
     ],
   },
   proyecto2: {
@@ -64,8 +64,8 @@ const proyectos = {
       "Creé un sitio web básico y de un restaurante local llamado 'Sabor de Barrio'. El sitio incluye fotos de los platillos y menu, horarios de apertura y contacto. Implementé un diseño responsivo para asegurar que el sitio se vea bien en dispositivos móviles y de escritorio.",
     tecnologias: ["HTML", "CSS"],
     Imagen: [
-      "../visuales/capturas-de-proyectos/saborDbarrio/photo1.png",
-      "../visuales/capturas-de-proyectos/saborDbarrio/photo2.png",
+      "visuales/capturas-de-proyectos/saborDbarrio/photo1.png",
+      "visuales/capturas-de-proyectos/saborDbarrio/photo2.png",
     ],
   },
   proyecto3: {
@@ -74,7 +74,7 @@ const proyectos = {
     descripcion:
       "Cloné una página web inspirada en Apple Store, con un diseño moderno y funcional que refleja la identidad de la marca. Muestro un producto nuevo, servicios y contacto.",
     tecnologias: ["HTML", "CSS"],
-    Imagen: ["../visuales/capturas-de-proyectos/appleStore/photo1.png"],
+    Imagen: ["visuales/capturas-de-proyectos/appleStore/photo1.png"],
   },
 };
 
@@ -118,3 +118,4 @@ function activarModalProyecto(e) {
 botnVerProyectos.forEach((btn) => {
   btn.addEventListener("click", activarModalProyecto);
 });
+
