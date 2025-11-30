@@ -1,109 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link
-      href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wdth,wght@0,75..100,221;1,75..100,221&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portafolio personal</title>
-    <style>
-         /* Estilo general */
-      body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-     background: linear-gradient(135deg, #21213f 50%, #817f7f);
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-    </style>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header id="Inicio">
-          <img src="visuales/perfil2.jpg" alt="Perfil">
-      <section class="hero">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wdth,wght@0,75..100,221;1,75..100,221&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Portafolio personal</title>
+</head>
+
+<body class="">
+  <button class="modo-oscuro-btn">🌙</button>
+  <!-- HEADER -->
+  <header id="Inicio">
+    <img src="perfil2.jpg" alt="Perfil">
+    <section class="hero">
       <h1>Franco Fabregat</h1>
-    <h2>Frontend Developer Student</h2>
+      <h2>Frontend Developer Student</h2>
     </section>
-            <!-- NAV -->
+    <!-- NAV -->
     <nav>
-   <ul>
-    <li>
-      <a data-id="menu-inicio" href="#Inicio">Inicio</a>
-      <li>
-          <a data-id="menu-inicio" href="#about-me">Sobre Mí</a></li>
-    </li>
-      <li>
-        <a data-id="menu-inicio" href="#proyectos">Proyectos</a>
-      </li>
+      <ul>
         <li>
-          <a data-id="menu-inicio" href="#contacto">Contacto</a></li>
-    </li>
-   </ul>
+          <a data-id="menu-inicio" href="#Inicio">Inicio</a>
+        <li>
+          <a data-id="menu-inicio" href="#proyectos">Proyectos</a>
+        </li>
+        <li>
+          <a data-id="menu-inicio" href="#contacto">Contacto</a>
+        </li>
+        </li>
+        <li>
+          <a data-id="menu-inicio" href="#about-me">Sobre Mí</a>
+        </li>
+        </li>
+      </ul>
     </nav>
-    </header>
-     <section id="about-me" class="">
+  </header>
+
+
+  <section id="about-me" class="">
     <h2>About Me</h2>
-   <p>
+    <p>
       Hola!... Soy <strong>Franco Fabregat</strong>, un Frontend Developer en formación, apasionado por
       crear experiencias digitales atractivas y funcionales. Mi objetivo es
       combinar creatividad y tecnología para diseñar lugares webs... <button class="verMas"
         data-id="activador-modal">Ver más...👈🏾 </button></p>
-    </section>
-    <!-- MAIN -->
-    <main id="proyectos">
-<h1>Mis Proyectos</h1>
-<section class="proyectos">
-  <article>
-    <h2>Pastelería Dulce Encanto.website</h2>
-  <p>Página web de la pastelería Dulce Encanto, con diseño responsive y funcional, que refleja la identidad de la marca.
-     Incluye estructura de navegación clara,
-     secciones de productos y servicios, utilizando tecnologías web como HTML y CSS.</p>
-  <a href="Pastelería Dulce Encanto.Website\index.html">Ver proyecto</a>
-    </article>
-  <article>
-    <h2>Restaurante El-Sabor-de-Barrio.website</h2>
-    <p>Página web del restaurante El Sabor de Barrio, con diseño simple y funcional, que refleja la identidad de la marca. 
-      Incluye secciones de menú, reservas y contacto, utilizando tecnologías web como HTML y CSS.</p>
-      <a href="Restaurante El-Sabor-de-Barrio/index.html">Ver proyecto</a>
-  </article>
-  <article>
-    <H2>Apple Store.website</H2>
-    <p>
-      Página web inspirada en Apple Store, con diseño moderno y funcional, que refleja la identidad de la marca. 
-      Utilizando tecnologías web como HTML y CSS.
-    </p>
-    <a href="Página-Simple 3\index.html">Ver Proyecto</a>
-  </article>
-  <article>
-    <H2>Galería de Productos.website</H2>
-    <p>
-Una galería de productos inspirada en una tienda real, mostrando solo unos pocos productos digitales como ejemplo. 
-      Utilizando tecnologías web como HTML y CSS y también Flexbox por primera vez.
-    </p>
-    <a href="proyecto3\index.html">Ver Proyecto</a>
-  </article>
-    <article>
-    <H2>TechNova Store.website</H2>
-    <p>
-Tienda de Productos digitales digitales, con diseño responsivo usando HTML, CSS y Bootstrap.
-    </p>
-    <a href="TechNova-Store\index.html">Ver Proyecto</a>
-  </article>
-</section>
-    </main>
-    <!-- FOOTER -->
-    <footer id="contacto">
+  </section>
+  <!-- MAIN -->
+  <main id="proyectos">
+    <h1>Mis Proyectos</h1>
+    <section class="proyectos">
       <article>
-        <h2>Contacto</h2>
-        <p>¡Gracias por visitar mi portafolio! Si deseas ponerte en contacto conmigo, te dejo donde puedes encontrarme:</p> 
-<a href="https://wa.me/97785586" target="_blank"><img src="whats.jpg" alt="WhatsApp"></a>
+        <h2 data-id="cardTitle">Pastelería Dulce Encanto.website</h2>
+        <p>Página web de la pastelería Dulce Encanto, con diseño responsive y funcional, que refleja la identidad de la
+          marca.
+          Incluye estructura de navegación clara,
+          secciones de productos y servicios.</p>
+        <p style="font-weight: bolder;">
+          Tecnologías web: HTML y CSS.
+        </p>
+        <a href="Pastelería Dulce Encanto.Website/index.html">Ver
+          proyecto</a>
+        <button data-id="proyecto1" data-proyecto="modal-proyecto" class="vistaDetallada">Ver Más </button>
       </article>
-    </footer>
-  </body> 
+
+      <article>
+        <h2 data-id="cardTitle">Restaurante El-Sabor-de-Barrio.website</h2>
+        <p>Página web del restaurante El Sabor de Barrio, con diseño simple y funcional, que refleja la identidad de la
+          marca.
+          Incluye secciones de menú, reservas y contacto.</p>
+        <p style="font-weight: bolder;">
+          Tecnologías web: HTML y CSS.
+        </p>
+        <a href="Restaurante El-Sabor-de-Barrio/index.html">Ver proyecto</a>
+        <button data-id="proyecto2" data-proyecto="modal-proyecto" class="vistaDetallada">Ver Más </button>
+      </article>
+
+      <article>
+        <H2 data-id="cardTitle">Apple Store.website</H2>
+        <p>
+          Página web inspirada en Apple Store, con diseño moderno y funcional, que refleja la identidad de la marca.
+          Muestra un producto nuevo, servicios y contacto.</p>
+        <p style="font-weight: bolder;">
+          Tecnologías web: HTML y CSS
+        </p>
+        <a href="Página-Simple 3/index.html">Ver
+          Proyecto</a>
+
+        <button data-id="proyecto3" data-proyecto="modal-proyecto" class="vistaDetallada">Ver Más </button>
+      </article>
+      <article>
+        <h2 data-id="cardTitle">Galería de Productos.website</h2>
+        <p>
+          Una galería de productos inspirada en una tienda real, mostrando solo unos pocos productos digitales como
+          ejemplo.
+          Utilizando tecnologías web como HTML y CSS y también Flexbox por primera vez.
+        </p>
+        <a href="proyecto3/index.html">Ver Proyecto</a>
+        <button data-id="proyecto4" data-proyecto="modal-proyecto" class="vistaDetallada">Ver Más </button>
+      </article>
+      <article>
+        <h2 data-id="cardTitle">TechNova Store.website</h2>
+        <p>
+          Tienda de Productos digitales digitales, con diseño responsivo usando HTML, CSS y Bootstrap.
+        </p>
+        <a href="TechNova-Store/index.html">Ver Proyecto</a>
+        <button data-id="proyecto5" data-proyecto="modal-proyecto" class="vistaDetallada">Ver Más </button>
+      </article>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <article>
+      <h2>Contacto</h2>
+      <p>¡Gracias por visitar mi portafolio! Si deseas ponerte en contacto conmigo, te dejo donde puedes encontrarme:
+      </p>
+      <a href="https://wa.me/97785586" target="_blank"><img src="whats.jpg" alt="WhatsApp"></a>
+    </article>
+  </footer>
+  <script src="cambioDeModo.js"></script>
+  <script src="modales.js"></script>
+</body>
+
 </html>
