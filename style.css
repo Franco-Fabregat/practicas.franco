@@ -1,3 +1,14 @@
+/* Estilo general */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #21213f 50%, #a5a1a1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Encabezado */
 header {
   flex: 1;
@@ -6,6 +17,13 @@ header {
   background: linear-gradient(135deg, #21213f 50%, #817f7f);
   color: #ffffff;
 }
+
+header img {
+  width: 130px;
+  border-radius: 40%;
+  height: 160px;
+}
+
 header h1 {
   font-size: 2.5rem;
   margin: 0;
@@ -51,6 +69,18 @@ header p {
 }
 #about-me > h2 + p {
   text-align: center;
+}
+
+.verMas:hover {
+  text-decoration: underline;
+}
+.verMas {
+  background: transparent;
+  text-align: center;
+  border: none;
+  color: #bb86fc;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 /* Navegación */
@@ -154,4 +184,195 @@ footer a img {
 }
 footer a img:hover {
   transform: scale(1.1);
+}
+
+/* MEJORAS */
+
+/* BOTON MODO NOCTURNO/DIURNO */
+.modo-oscuro-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #bb86fc;
+  color: #1e1e1e;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, color 0.3s;
+}
+.modo-oscuro-btn:hover {
+  background-color: #514768;
+}
+
+/* Estilos para el modo claro */
+.body-claro {
+  background: #cacaca !important;
+  color: #1e1e1e;
+}
+.nav-claro {
+  background-color: #c4c4c4;
+  color: #1a1a1a;
+}
+
+.header-claro {
+  background: linear-gradient(135deg, #f5f5f5 50%, #261369);
+  color: #1a1a1a;
+}
+.sobreMi-claro {
+  border: #2c5fa8 solid 2px;
+}
+.cards-claro {
+  background-color: #96a6b3 !important;
+}
+.footer-claro {
+  background-color: #808080b7;
+}
+.parrafos-claro {
+  color: #111111;
+}
+
+.encabezados-claro {
+  color: #1a1a1a;
+}
+
+.encabezados-cards-claro {
+  color: #255892 !important;
+}
+.enlaces-claro {
+  color: #505050 !important;
+  border: #2c5fa8 solid 2px !important;
+}
+/* ================================== */
+
+/* modal para la section about-me */
+.oculto {
+  display: none;
+  position: relative;
+}
+
+.salir {
+  position: absolute;
+  top: -15px;
+  right: -12px;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.opacity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999; /* <--- Cambiado de 10 a 9999 */
+}
+
+.modal-contenido {
+  background-color: #ada3a3;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 20;
+  animation: fadeIn 0.8s;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================== */
+/* modal para cada proyecto */
+.vistaDetallada {
+  margin-left: 10px;
+  padding: 5px;
+  border: white 2px solid;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 1rem;
+  color: #03dac6;
+  background: transparent;
+  text-decoration: none;
+
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.imagenProyecto {
+  width: 100%;
+
+  border-radius: 8px;
+  height: auto;
+}
+
+.salirProyecto {
+  position: absolute;
+  top: -3px;
+  right: -2px;
+  padding: 8px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.container-figure {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 600px) {
+  header img {
+    width: 200px;
+    height: 220px;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 599px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  .proyectos article {
+    width: 100%;
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media (hover: none) and (pointer: coarse) {
+  *:hover {
+    /* desactiva únicamente la transición del hover sin romper nada */
+    transition: none !important;
+    transform: none !important;
+  }
 }
