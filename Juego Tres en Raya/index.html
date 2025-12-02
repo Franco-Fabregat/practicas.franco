@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tres en Raya</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <button data-id="CambiaModo">🌞</button>
+    <h1>Tres en Raya</h1>
+
+    <div class="juego">
+      <form action="">
+        <label for="nombreJugador"
+          >Jugador X:
+          <input
+            type="text"
+            data-player="X"
+            placeholder="Ingresa tu nombre"
+            required
+        /></label>
+        <label for="nombreJugador"
+          >Jugador O:
+          <input
+            type="text"
+            data-player="O"
+            placeholder="Ingresa tu nombre"
+            required
+        /></label>
+
+        <button type="submit">Iniciar Juego</button>
+      </form>
+      <article class="jugadores"></article>
+      <h2>El turno es para <span data-player="turno"></span></h2>
+
+      <section id="tablero"></section>
+    </div>
+
+    <section class="endgame">
+      <!-- la clase opacity la agregamos a este section en el js -->
+      <article class="mensaje-endgame">
+        <!-- la clase show la agregamos a este article en el js -->
+        <h1 class="endgame__winner">¡<span data-player="ganador"></span></h1>
+        <p>¿Quieres jugar de nuevo?</p>
+        <button class="restart">Jugar de nuevo</button>
+      </article>
+    </section>
+    <script src="juego.js"></script>
+    <script src="modo.js"></script>
+  </body>
+</html>

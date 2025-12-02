@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  background-color: #026b5d8c;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor > h1 {
+  font-size: 4rem;
+  color: #0d0552d5;
+}
+
+.agregar-tarea {
+  flex-basis: 100%;
+  height: fit-content;
+  margin: 30px 0 30px 0;
+  padding: 20px;
+  background-color: #b2d6ca;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.agregar-tarea h2 {
+  text-align: center;
+  margin: 0 0 20px 0;
+  flex-basis: 100%;
+}
+
+.agregar-tarea input {
+  height: 30px;
+  width: 40%;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.agregar-tarea button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Estilos para la lista de tareas */
+.lista-tareas {
+  flex-basis: 100%;
+  height: fit-content;
+  margin: 20px 0 20px 0;
+  padding: 10px;
+  /* background-color: #b2d6ca; */
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.lista-tareas > h2 {
+  text-align: center;
+  margin: 0 0 20px 0;
+  flex-basis: 100%;
+}
+
+h3 {
+  text-align: center;
+  color: #2d302f;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.lista-tareas > button {
+  position: absolute;
+  right: 20%;
+  bottom: -10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #c43939d5;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#lista {
+  text-align: center;
+  list-style-type: none;
+}
+
+.salir {
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+  border-radius: 50%;
+  background-color: #c43939d5;
+  margin-top: 10px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 560px) {
+  .agregar-tarea {
+    flex-direction: column;
+
+    align-content: center;
+  }
+  .agregar-tarea input {
+    width: 100%;
+  }
+  .agregar-tarea input::placeholder {
+    text-align: center;
+  }
+
+  #lista {
+    flex-basis: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .lista-tareas > button {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #c43939d5;
+    margin-top: 10px;
+  }
+}
+
+/* Efecto para aparecer la tarea */
+
+.tarea {
+  animation: FadeIn 0.3s ease-in-out;
+}
+
+/* Efecto para eliminar la tarea */
+
+.tareaTerminada {
+  animation: pulse 0.4s ease-in-out;
+}
+
+/* Efecto para eliminar la tarea */
+
+.checkMoodEliminar {
+  animation: rotate 0.3s infinite;
+  outline: 2px solid #ff0000d5;
+}
+
+/* Animaciones creadas para las tarea */
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-11deg);
+  }
+}

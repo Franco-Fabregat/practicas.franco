@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App de Tareas</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>App de Tareas</h1>
+
+      <section class="agregar-tarea">
+        <h2>Agregar Tarea</h2>
+
+        <input
+          type="text"
+          id="nuevaTarea"
+          placeholder="Escribe una nueva tarea..."
+        />
+        <button>Crear Tarea</button>
+      </section>
+
+      <h2 style="margin-bottom: 15px">Mis Tareas</h2>
+      <section class="lista-tareas">
+        <ul id="lista" data-id="listaTareas">
+          <!-- Las tareas se agregarán aquí dinámicamente con JavaScript -->
+        </ul>
+        <button data-id="eliminarTarea">Eliminar Tarea</button>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
