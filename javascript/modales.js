@@ -50,12 +50,12 @@ const proyectos = {
     descripcion:
       "Desarrollé un sitio web para una pastelería local llamada 'Dulce Encanto'. El sitio presenta un diseño atractivo y funcional, con secciones para mostrar productos, promociones y contacto. Utilicé HTML, CSS y JavaScript para crear una experiencia de usuario amigable y visualmente atractiva.",
     tecnologias: ["HTML", "CSS"],
-   Imagen: [
-  "/practicas.franco/visuales/capturas-de-proyectos/pasteleria/photo1.png",
-  "/practicas.franco/visuales/capturas-de-proyectos/pasteleria/photo2.jpg",
-  "/practicas.franco/visuales/capturas-de-proyectos/pasteleria/photo3.jpg",
-  "/practicas.franco/visuales/capturas-de-proyectos/pasteleria/photo4.jpg",
-],
+    Imagen: [
+      "visuales/capturas-de-proyectos/pasteleria/photo1.png",
+      "visuales/capturas-de-proyectos/pasteleria/photo2.jpg",
+      "visuales/capturas-de-proyectos/pasteleria/photo3.jpg",
+      "visuales/capturas-de-proyectos/pasteleria/photo4.jpg",
+    ],
   },
   proyecto2: {
     id: "proyecto2",
@@ -64,8 +64,8 @@ const proyectos = {
       "Creé un sitio web básico y de un restaurante local llamado 'Sabor de Barrio'. El sitio incluye fotos de los platillos y menu, horarios de apertura y contacto. Implementé un diseño responsivo para asegurar que el sitio se vea bien en dispositivos móviles y de escritorio.",
     tecnologias: ["HTML", "CSS"],
     Imagen: [
-      "/practicas.franco/visuales/capturas-de-proyectos/saborDbarrio/photo1.png",
-      "/practicas.franco/visuales/capturas-de-proyectos/saborDbarrio/photo2.png",
+      "visuales/capturas-de-proyectos/saborDbarrio/photo1.png",
+      "visuales/capturas-de-proyectos/saborDbarrio/photo2.png",
     ],
   },
   proyecto3: {
@@ -74,7 +74,57 @@ const proyectos = {
     descripcion:
       "Cloné una página web inspirada en Apple Store, con un diseño moderno y funcional que refleja la identidad de la marca. Muestro un producto nuevo, servicios y contacto.",
     tecnologias: ["HTML", "CSS"],
-    Imagen: ["/practicas.franco/visuales/capturas-de-proyectos/appleStore/photo1.png"],
+    Imagen: ["visuales/capturas-de-proyectos/appleStore/photo1.png"],
+  },
+  proyecto4: {
+    id: "proyecto4",
+    titulo: "Galería de Productos Digitales",
+    descripcion:
+      "Una galería de productos inspirada en una tienda real, mostrando solo unos pocos productos digitales como ejemplo.",
+    tecnologias: ["HTML", "CSS"],
+    Imagen: [
+      "visuales/capturas-de-proyectos/galeriaDproductos/photo1.png",
+      "visuales/capturas-de-proyectos/galeriaDproductos/photo2.png",
+    ],
+  },
+  proyecto5: {
+    id: "proyecto5",
+    titulo: "TechNova Store.website",
+    descripcion:
+      "Tienda de Productos digitales digitales, con diseño responsivo.",
+    tecnologias: ["HTML", "CSS", "Bootstrap"],
+    Imagen: [
+      "visuales/capturas-de-proyectos/TechStore/photo1.png",
+      "visuales/capturas-de-proyectos/TechStore/photo2.png",
+      "visuales/capturas-de-proyectos/TechStore/photo3.png",
+      "visuales/capturas-de-proyectos/TechStore/photo4.png",
+    ],
+  },
+
+  proyecto6: {
+    id: "proyecto6",
+    titulo: "Juego 3 en Raya (Tic Tac Toe)",
+    descripcion:
+      "Famoso juego X y O, un juego que permite a dos jugadores competir en un tablero interactivo. Muestra el estado del juego en tiempo real y determina el ganador o si hay un empate.",
+    tecnologias: ["HTML", "CSS", "JavaScript"],
+    Imagen: [
+      "visuales/capturas-de-proyectos/3enRaya/photo1.png",
+      "visuales/capturas-de-proyectos/3enRaya/photo2.png",
+      "visuales/capturas-de-proyectos/3enRaya/photo3.png",
+      "visuales/capturas-de-proyectos/3enRaya/photo4.png",
+    ],
+  },
+  proyecto7: {
+    id: "proyecto7",
+    titulo: " App Web de Tareas (To-Do List)",
+    descripcion:
+      "Aplicación web para gestionar tareas diarias. Permite a los usuarios agregar, marcar como completadas y eliminar tareas, con una interfaz sencilla y funcional.",
+    tecnologias: ["HTML", "CSS", "JavaScript"],
+    Imagen: [
+      "visuales/capturas-de-proyectos/AppTareas/photo1.png",
+      "visuales/capturas-de-proyectos/AppTareas/photo2.png",
+      "visuales/capturas-de-proyectos/AppTareas/photo3.png",
+    ],
   },
 };
 
@@ -86,7 +136,6 @@ function activarModalProyecto(e) {
     vistaProyecto.classList.add("opacity");
     vistaProyecto.innerHTML = `
       <div class="modal-contenido"
-      style = "width: 80%; height: 80%; overflow: auto;">
         <h2>${proyecto.titulo}</h2>
         <p>${proyecto.descripcion}</p>
         <ul>
@@ -98,10 +147,56 @@ function activarModalProyecto(e) {
           (img) => `<img class="imagenProyecto" src="${img}">`
         ).join("")}
         </figure>
-        <button class="salirProyecto" style="!important">❌</button>
+        <button class="salirProyecto"">❌</button>
       </div>
     `;
     document.body.appendChild(vistaProyecto);
+
+    // Esta lógica vive aquí para que las imágenes y el contenedor existan en el DOM
+    // en el momento en que se hace el querySelector y se agregan los listeners.
+
+    const imagenesProyecto = vistaProyecto.querySelectorAll(".imagenProyecto");
+    let imagenGrande = false;
+
+    function manejarZoomImagen(e) {
+      const imagenClicada = e.currentTarget;
+
+      if (!imagenGrande) {
+        // Primer clic: agrandar imagen
+        imagenGrande = true;
+
+        // quitar enfoque de todas
+        imagenesProyecto.forEach((img) => {
+          img.classList.remove("imagen-enfocada");
+        });
+
+        // dar enfoque solo a la clicada
+        imagenClicada.classList.add("imagen-enfocada");
+      } else {
+        // Segundo clic: volver todo a su estado original
+        imagenGrande = false;
+
+        imagenesProyecto.forEach((img) => {
+          img.classList.remove("imagen-enfocada");
+        });
+      }
+    }
+
+    // Agrandar imágenes en el modal de proyectos para verlas mejor
+    imagenesProyecto.forEach((imagen) => {
+      imagen.addEventListener("click", manejarZoomImagen);
+    });
+
+    // 2. Clic fuera para volver al tamaño original
+    // vistaProyecto.addEventListener("click", (e) => {
+    //   // Si haces clic directamente en el fondo (no en el contenido)
+    //   if (e.target === vistaProyecto) {
+    //     imagenesProyecto.forEach((img) => {
+    //       img.style.transform = "scale(1)";
+    //     });
+    // }
+    // });
+
     // DESHABILITAR SCROLL DEL FONDO CUANDO EL MODAL DE PROYECTO ESTÁ ABIERTO
     document.body.style.overflow = "hidden";
     vistaProyecto
@@ -118,6 +213,9 @@ function activarModalProyecto(e) {
 botnVerProyectos.forEach((btn) => {
   btn.addEventListener("click", activarModalProyecto);
 });
+
+// ===========================================================
+
 
 
 
