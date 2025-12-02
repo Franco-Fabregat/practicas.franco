@@ -264,6 +264,13 @@ footer a img:hover {
   border: none;
   cursor: pointer;
 }
+.botnVerMas {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(90, 143, 70);
+  }
+}
+
 
 .opacity {
   display: flex;
