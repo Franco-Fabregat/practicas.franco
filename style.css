@@ -264,13 +264,6 @@ footer a img:hover {
   border: none;
   cursor: pointer;
 }
-.botnVerMas {
-    cursor: pointer;
-    font-weight: bold;
-    color: rgb(90, 143, 70);
-  }
-}
-
 
 .opacity {
   display: flex;
@@ -286,6 +279,12 @@ footer a img:hover {
   width: 100vw;
   height: 100vh;
   z-index: 9999; /* Asegura que el modal esté por encima de otros elementos */
+}
+
+.botnVerMas {
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(90, 143, 70);
 }
 
 .modal-contenido {
@@ -427,5 +426,11 @@ footer a img:hover {
 
   .texto-presentacion {
     margin-top: 50px;
+  }
+
+  .botnVerMas {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(90, 143, 70);
   }
 }
