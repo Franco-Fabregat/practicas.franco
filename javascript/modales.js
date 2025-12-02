@@ -1,8 +1,6 @@
 // Modal About Me
 const botonVerMas = document.querySelector('button[data-id="activador-modal"]');
-botonVerMas.style.cursor = "pointer";
-botonVerMas.style.color = "black";
-botonVerMas.style.fontWeight = "bold";
+botonVerMas.classList.add("botnVerMas");
 let modal = false;
 
 function activarModal() {
@@ -222,4 +220,5 @@ botnVerProyectos.forEach((btn) => {
 });
 
 // ===========================================================
+
 
