@@ -278,11 +278,12 @@ footer a img:hover {
   backdrop-filter: blur(3px);
   width: 100vw;
   height: 100vh;
-  z-index: 9999; /* <--- Cambiado de 10 a 9999 */
+  z-index: 9999; /* Asegura que el modal esté por encima de otros elementos */
 }
 
 .modal-contenido {
-  background-color: #b0a8bb;
+  text-align: center;
+  background-color: #afb1b4;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -295,6 +296,11 @@ footer a img:hover {
   height: 70vh;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.texto-presentacion {
+  text-align: center;
+  margin-top: 100px;
 }
 
 @keyframes fadeIn {
@@ -335,7 +341,7 @@ footer a img:hover {
 }
 
 .tituloProyecto {
-  font-size: 1.2rem;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -411,5 +417,8 @@ footer a img:hover {
     box-shadow: none !important;
     transition: none !important;
   }
-}
 
+  .texto-presentacion {
+    margin-top: 50px;
+  }
+}
