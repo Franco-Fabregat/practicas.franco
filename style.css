@@ -130,12 +130,14 @@ main h1 {
   gap: 2rem;
 }
 .proyectos article {
-  width: 20rem;
+  flex: 1 1 320px; /* Mínimo 320px, crece hasta llenar el espacio */
+
   background-color: #1e1e1e;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.274);
   transition: transform 0.3s, box-shadow 0.3s;
+  margin: 0; /* Elimina márgenes extra */
 }
 .proyectos article:hover {
   box-shadow: -10px 5px 5px blue;
@@ -255,9 +257,9 @@ footer a img:hover {
 
 .salir {
   position: absolute;
-  top: -15px;
-  right: -12px;
-  padding: 10px;
+  top: -5px;
+  right: -5px;
+  padding: 5px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -280,16 +282,19 @@ footer a img:hover {
 }
 
 .modal-contenido {
-  background-color: #ada3a3;
+  background-color: #b0a8bb;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  width: 80%;
   opacity: 1;
   pointer-events: auto;
   z-index: 20;
   animation: fadeIn 0.8s;
   position: relative;
+  width: 80vw;
+  height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @keyframes fadeIn {
@@ -300,6 +305,15 @@ footer a img:hover {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 92vw;
   }
 }
 
@@ -320,11 +334,21 @@ footer a img:hover {
   cursor: pointer;
 }
 
+.tituloProyecto {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .imagenProyecto {
   width: 100%;
-
+  scale: 1;
   border-radius: 8px;
   height: auto;
+}
+.imagen-enfocada {
+  animation: zoomIn 0.8s;
+  animation-fill-mode: forwards;
+  z-index: 99;
 }
 
 .salirProyecto {
@@ -352,7 +376,15 @@ footer a img:hover {
     width: 200px;
     height: 220px;
   }
+
+  .imagen-enfocada {
+    animation: none;
+    animation-fill-mode: none;
+    z-index: 9999;
+    overflow-x: visible !important;
+  }
 }
+/* ================================== */
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 599px) {
@@ -363,16 +395,21 @@ footer a img:hover {
     font-size: 1.2rem;
   }
 
+  .proyectos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
   .proyectos article {
-    width: 100%;
+    flex: 1 1 50%;
+    max-width: 300px;
+    min-width: 140px;
+    transition: none !important;
+  }
+  article:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    transition: none !important;
   }
 }
 
-/* Estilos para dispositivos móviles */
-@media (hover: none) and (pointer: coarse) {
-  *:hover {
-    /* desactiva únicamente la transición del hover sin romper nada */
-    transition: none !important;
-    transform: none !important;
-  }
-}
