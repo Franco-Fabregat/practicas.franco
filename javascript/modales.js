@@ -131,6 +131,20 @@ const proyectos = {
       "visuales/capturas-de-proyectos/AppTareas/photo3.png",
     ],
   },
+  
+  proyecto8: {
+    id: "proyecto8",
+    titulo: "Barbería Avengers Website",
+    descripcion:
+      "Página web de una barbería temática de Avengers, con diseño moderno y funcional.",
+    tecnologias: ["HTML", "CSS", "JavaScript"],
+    Imagen: [
+      "visuales/capturas-de-proyectos/barbería/photo1.png",
+      "visuales/capturas-de-proyectos/barbería/photo2.png",
+      "visuales/capturas-de-proyectos/barbería/photo3.png",
+      "visuales/capturas-de-proyectos/barbería/photo4.png",
+    ],
+  },
 };
 
 function activarModalProyecto(e) {
@@ -220,3 +234,4 @@ botnVerProyectos.forEach((btn) => {
 });
 
 // ===========================================================
+
