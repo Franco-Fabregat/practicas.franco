@@ -111,6 +111,10 @@
   background-color: #dac8c8;
   border-radius: 20px;
   text-align: center;
+  width: 100%;
+  max-width: 1200px; /* limita el ancho del recuadro */
+  padding: 40px 20px; /* añade espacio interno para que el botón quede dentro */
+  box-sizing: border-box;
 }
 
 .encabezado-recuadro {
@@ -132,19 +136,9 @@
   background-color: #bb8763;
 }
 
-/* ==== Comentado / Eliminado ==== */
-/*
-.nuestros-productos {
-  display: inline-block;
-  margin-left: 40px;
-  align-content: center;
-}
-.descripcion-de-productos {
-  width: fit-content;
-}
-.encabezado-recuadro {
-  display: inline-block;
-  width: fit-content;
-  height: fit-content;
-}
+/* INFORME_DE_CAMBIOS (actualizado: 2025-12-31)
+ - Archivo: PRODUCTOS.css
+ - Cambios: Se añadió ancho responsivo y padding al contenedor `.recuadro` (width:100%; max-width:1200px; padding:40px 20px; box-sizing:border-box) para asegurar que el botón quede dentro y centrado.
+ - Propósito: Evitar que el botón quede fuera del contenedor y mejorar la adaptabilidad del recuadro en pantallas pequeñas.
+ - Nota: Este comentario reemplaza informes previos y se actualizará con futuros cambios.
 */
