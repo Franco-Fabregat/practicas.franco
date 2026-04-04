@@ -1,0 +1,10 @@
+{
+  "OPEN_YOUTUBE": {
+    "patterns": [
+      "abre youtube",
+      "quiero ver videos",
+      "pon youtube"
+    ],
+    "target": "youtube"
+  }
+}
